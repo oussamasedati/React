@@ -1,15 +1,15 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Form from './components/Form';
-import About from './components/About';
+// import About from './components/About';
 import {useState} from 'react'
 import Alert from './components/Alert';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   Link,
+// } from "react-router-dom";
 
 
 
@@ -75,10 +75,10 @@ function App() {
 
   return (
     <>
-    <Router>
+    {/* <Router> */}
       {/* <Link to='/'>Home</Link>
       <Link to='/about'>About</Link> */}
-
+{/* 
       <Navbar title="TextUtils" about="about us" mode={mode} toggle={toggleMode}/>
       <Alert alert={alert}/>
 
@@ -87,11 +87,11 @@ function App() {
       <Route exact path='/about' element={<About/>} />
     
       </Routes>
-      </Router>
-   {/* <Navbar title="TextUtils" about="about us" mode={mode} toggle={toggleMode}/>
+      </Router> */}
+   <Navbar title="TextUtils" about="about us" mode={mode} toggle={toggleMode}/>
    <Alert alert={alert}/>
-   <About/> 
-   <Form heading="Enter the text in the box below" mode={mode} showAlert={showAlert}/> */}
+   {/* <About/>  */}
+   <Form heading="Enter the text in the box below" mode={mode} showAlert={showAlert}/>
    </>
   );
 }
